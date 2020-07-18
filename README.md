@@ -3,7 +3,7 @@ Cálculo de rescisão trabalhista em linha de comando
 
 ```
 usage: node calculo-rescisao.js [-h] [-v] [-i START] [-f END] [-m {1,2,3,4,5,6,7}]
-                                [-s SALARY] [-a {t,i}] [-F CHILDREN] [-H {0,1}]
+                                [-s SALARY] [-a {t,i}] [-F CHILDREN]
 
 
 Optional arguments:
@@ -20,8 +20,6 @@ Optional arguments:
                         O aviso prévio foi trabalhado ou indenizado?
   -F CHILDREN, --filhos CHILDREN
                         Número de filhos
-  -H {0,1}, --headless {0,1}
-                        Configuração do navegador
 
 Motivo da rescisão: - 1 - Pedido de demissão - 2 - Dispensa sem justa causa -
 3 - Dispensa com justa causa - 4 - Término de contrato de experiência - 5 -
