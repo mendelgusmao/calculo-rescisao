@@ -9,12 +9,10 @@ const calculateTermination = async (page, args) => {
     page.waitForNavigation(),
   ]);
 
-  const proceed = async () => {
-    await Promise.all([
-      page.click('#btnContinuar'),
-      page.waitForNavigation(),
-    ]);
-  };
+  const proceed = () => Promise.all([
+    page.click('#btnContinuar'),
+    page.waitForNavigation(),
+  ]);
 
   await fillPrimaryForm(page, args);
   await proceed();
